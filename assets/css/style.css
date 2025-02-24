@@ -1,0 +1,41 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+
+  /* HSL color mode */
+  --green-color: hsl(150, 100%, 63%);
+  --purple-color-900: hsl(273, 85%, 13%);
+  --purple-color-500: hsl(271, 12%, 34%);
+  --purple-color-100: hsl(276, 100%, 99%);
+  --white-color: #fff;
+
+  /*========== Font and typography ==========*/
+  @font-face {
+    font-family: "Fraunces";
+    src: url("../fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf");
+  }
+
+  @font-face {
+    font-family: "Manrope";
+    src: url("../fonts/manrope/static/Manrope-Regular.ttf");
+  }
+
+  --body-font: "Fraunces";
+  --title-font: "Fraunces";
+  --preset-1: 2.5rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margins Bottom ==========*/
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+  }
+}
+
+body {
+  font-family: var(--body-font);
+}
