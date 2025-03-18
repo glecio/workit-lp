@@ -20,14 +20,14 @@
   --weight-semi-bold: 600;
   --weight-bold: 700;
   @font-face {
-    font-family: Manrope;
-    src: url("/assets/fonts/manrope/static/Manrope-Regular.ttf")
-      format("truetype");
+    font-family: Fraunces;
+    src: url("/assets/fonts/Fraunces/Fraunces-Regular.ttf") format("truetype");
   }
 
   @font-face {
     font-family: "Manrope";
-    src: url("../fonts/manrope/static/Manrope-Regular.ttf");
+    src: url("/assets/fonts/Manrope/Manrope-Regular.ttf") format("truetype");
+      
   }
 
   --body-font: "Fraunces";
@@ -56,8 +56,9 @@
 
   .preset-3 {
     font-family: var(--body-font);
-    font-size: 1.125rem;
-    font-weight: var(--font-regular);
+    font-size: 2rem;
+    font-weight: var(--font-semi-bold);
+    line-height: 120%;
   }
 
   .preset-4 {
@@ -75,16 +76,16 @@
   }
 
   /*========== Spacing ==========*/
-  --space-100: 0.5rem;
-  --space-150: 0.75rem;
-  --space-200: 1rem;
-  --space-250: 1.25rem;
-  --space-350: 1.75rem;
-  --space-400: 2rem;
-  --space-500: 2.5rem;
-  --space-550: 2.75rem;
-  --space-700: 3.5rem;
-  --space-800: 4rem;
+  --space-100:  0.5rem;
+  --space-150:  0.75rem;
+  --space-200:  1rem;
+  --space-250:  1.25rem;
+  --space-350:  1.75rem;
+  --space-400:  2rem;
+  --space-500:  2.5rem;
+  --space-550:  2.75rem;
+  --space-700:  3.5rem;
+  --space-800:  4rem;
   --space-1000: 5rem;
   --space-1100: 5.5rem;
   --space-1400: 7rem;
@@ -121,6 +122,12 @@ video {
   height: auto;
 }
 
+
+input {
+  outline: none;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
 button {
   border: none;
   cursor: pointer;
@@ -128,11 +135,6 @@ button {
   padding: var(--space-150) var(--space-400);
 }
 
-input {
-  outline: none;
-}
-
-/*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 4.5rem 0 2.5rem;
 }
@@ -154,13 +156,33 @@ input {
   display: grid;
   gap: 1.5rem;
 }
-/*
-@media screen and (min-width: 968px) {
-  :root {
-  }
-}
-*/
+
 body {
   font-family: "Fraunces", sans-serif;
   color: var(--purple-color-500);
+}
+
+
+/*=============== NAV ===============*/
+.header, .hero {
+  background: var(--purple-color-900);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-200) 0;
+}
+
+.nav__logo {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  font-weight: var(--weight-bold);
+}
+
+/*=============== FEATURES SECTION ===============*/
+.features__container {
+  display: flex;
+  gap: var(--space-200);
 }
