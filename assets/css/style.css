@@ -16,9 +16,9 @@
     600 – Semi Bold (Demi Bold)
     700 – Bold.
    */
-  --wight-regular: 500;
-  --wight-semi-bold: 600;  
-  --wight-bold: 700;
+  --weight-regular: 500;
+  --weight-semi-bold: 600;
+  --weight-bold: 700;
   @font-face {
     font-family: "Fraunces";
     src: url("../fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf");
@@ -27,23 +27,52 @@
   @font-face {
     font-family: "Manrope";
     src: url("../fonts/manrope/static/Manrope-Regular.ttf");
-  } 
+  }
 
   --body-font: "Fraunces";
   --title-font: "Fraunces";
   --button-font: "Manrope";
-  
+
   /*========== Font size ==========*/
   .title {
     font-family: var(--title-font);
     font-size: 5rem;
-    font-weight: var(--font-semi-bold); 
+    font-weight: var(--font-semi-bold);
   }
 
+  /*========== TYPOGRAPHY PRESETS ==========*/
+  .preset-1 {
+    font-family: var(--body-font);
+    font-size: 1.125rem;
+    font-weight: var(--font-regular);
+  }
 
-  /*========== Margins Bottom ==========*/
+  .preset-2 {
+    font-family: var(--body-font);
+    font-size: 1.125rem;
+    font-weight: var(--font-regular);
+  }
+
+  .preset-3 {
+    font-family: var(--body-font);
+    font-size: 1.125rem;
+    font-weight: var(--font-regular);
+  }
+
+  .preset-4 {
+    font-family: var(--body-font);
+    font-size: 1.125rem;
+    font-weight: var(--font-regular);
+  }
+
+  .preset-5 {
+    font-family: var(--button-font);
+    font-size: 1.125rem;
+    font-weight: var(--weight-bold);
+    line-height: 180%;
+    color: var(--purple-color-900);
+  }
 }
-
 
 /*=============== BASE ===============*/
 * {
@@ -57,13 +86,6 @@ html {
 }
 
 body {
-
-}
-
-h1, h2, h3 {
-  color:
-  font-weight: var(--font-semi-bold);
-  font-family: 
 }
 
 ul {
@@ -80,23 +102,15 @@ video {
   height: auto;
 }
 
-button,
-input {
-  border: none;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-}
-
 button {
+  border: none;
   cursor: pointer;
+  background-color: var(--green-color);
+  padding: var(--spac) 1.5rem;
 }
 
 input {
   outline: none;
-}
-
-.main {
-  overflow-x: hidden;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -128,6 +142,6 @@ input {
 }
 
 body {
-  font-family: "Fraunces", sans-serif  ;
+  font-family: "Fraunces", sans-serif;
   color: var(--purple-color-500);
 }
