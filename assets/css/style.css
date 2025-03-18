@@ -125,7 +125,7 @@ button {
   border: none;
   cursor: pointer;
   background-color: var(--green-color);
-  padding: var(--spac) 1.5rem;
+  padding: var(--space-150) var(--space-400);
 }
 
 input {
