@@ -20,8 +20,9 @@
   --weight-semi-bold: 600;
   --weight-bold: 700;
   @font-face {
-    font-family: "Fraunces";
-    src: url("../fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf");
+    font-family: Manrope;
+    src: url("/assets/fonts/manrope/static/Manrope-Regular.ttf")
+      format("truetype");
   }
 
   @font-face {
@@ -72,6 +73,24 @@
     line-height: 180%;
     color: var(--purple-color-900);
   }
+
+  /*========== Spacing ==========*/
+  --space-100: 0.5rem;
+  --space-150: 0.75rem;
+  --space-200: 1rem;
+  --space-250: 1.25rem;
+  --space-350: 1.75rem;
+  --space-400: 2rem;
+  --space-500: 2.5rem;
+  --space-550: 2.75rem;
+  --space-700: 3.5rem;
+  --space-800: 4rem;
+  --space-1000: 5rem;
+  --space-1100: 5.5rem;
+  --space-1400: 7rem;
+  --space-1600: 8rem;
+  --space-1800: 9rem;
+  --space-2100: 10.5rem;
 }
 
 /*=============== BASE ===============*/
@@ -135,12 +154,12 @@ input {
   display: grid;
   gap: 1.5rem;
 }
-
+/*
 @media screen and (min-width: 968px) {
   :root {
   }
 }
-
+*/
 body {
   font-family: "Fraunces", sans-serif;
   color: var(--purple-color-500);
