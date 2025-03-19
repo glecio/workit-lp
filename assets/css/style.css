@@ -9,7 +9,7 @@
   --purple-color-100: hsl(276, 100%, 99%);
   --white-color: #fff;
 
-  /*========== Font and typography ==========*/
+  /*========== TYPOGHAPHY ==========*/
   /*========== Font weight ==========*/
   /*
     400 – Regular. 
@@ -27,7 +27,6 @@
   @font-face {
     font-family: "Manrope";
     src: url("/assets/fonts/Manrope/Manrope-Regular.ttf") format("truetype");
-      
   }
 
   --body-font: "Fraunces";
@@ -36,16 +35,18 @@
 
   /*========== Font size ==========*/
   .title {
-    font-family: var(--title-font);
-    font-size: 5rem;
-    font-weight: var(--font-semi-bold);
+    color: var(--white-color);
+    text-align: center;
   }
 
   /*========== TYPOGRAPHY PRESETS ==========*/
+
   .preset-1 {
     font-family: var(--body-font);
-    font-size: 1.125rem;
-    font-weight: var(--font-regular);
+    font-size: 3rem;
+    font-weight: var(--font-semi-bold);
+    line-height: 100%;
+    letter-spacing: 0rem;
   }
 
   .preset-2 {
@@ -76,16 +77,16 @@
   }
 
   /*========== Spacing ==========*/
-  --space-100:  0.5rem;
-  --space-150:  0.75rem;
-  --space-200:  1rem;
-  --space-250:  1.25rem;
-  --space-350:  1.75rem;
-  --space-400:  2rem;
-  --space-500:  2.5rem;
-  --space-550:  2.75rem;
-  --space-700:  3.5rem;
-  --space-800:  4rem;
+  --space-100: 0.5rem;
+  --space-150: 0.75rem;
+  --space-200: 1rem;
+  --space-250: 1.25rem;
+  --space-350: 1.75rem;
+  --space-400: 2rem;
+  --space-500: 2.5rem;
+  --space-550: 2.75rem;
+  --space-700: 3.5rem;
+  --space-800: 4rem;
   --space-1000: 5rem;
   --space-1100: 5.5rem;
   --space-1400: 7rem;
@@ -95,6 +96,7 @@
 }
 
 /*=============== BASE ===============*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -121,7 +123,6 @@ video {
   max-width: 100%;
   height: auto;
 }
-
 
 input {
   outline: none;
@@ -162,9 +163,8 @@ body {
   color: var(--purple-color-500);
 }
 
-
 /*=============== NAV ===============*/
-.header, .hero {
+.header {
   background: var(--purple-color-900);
 }
 
@@ -181,8 +181,51 @@ body {
   font-weight: var(--weight-bold);
 }
 
+/*=============== HERO SECTION ===============*/
+
+.hero {
+  padding: 0;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: var(--purple-color-900);
+
+  padding: 8rem 0 4rem 0;
+}
+
+.hero__title {
+  padding: 0 0 4rem 0;
+}
+
+.curve {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  position: absolute;
+}
+
+.hero-img img {
+  width: 23rem;
+}
+
+.curvesvg {
+  fill: var(--purple-color-900);
+  width: 100%;
+  height: 5rem;
+}
 /*=============== FEATURES SECTION ===============*/
 .features__container {
   display: flex;
   gap: var(--space-200);
+  flex-direction: column;
 }
+
+/*=============== FOOTER SECTION ===============*/
