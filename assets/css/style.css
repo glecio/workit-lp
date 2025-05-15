@@ -19,15 +19,6 @@
   --weight-regular: 500;
   --weight-semi-bold: 600;
   --weight-bold: 700;
-  @font-face {
-    font-family: Fraunces;
-    src: url("/assets/fonts/Fraunces/Fraunces-Regular.ttf") format("truetype");
-  }
-
-  @font-face {
-    font-family: "Manrope";
-    src: url("/assets/fonts/Manrope/Manrope-Regular.ttf") format("truetype");
-  }
 
   --body-font: "Fraunces";
   --title-font: "Fraunces";
@@ -42,9 +33,9 @@
   /*========== TYPOGRAPHY PRESETS ==========*/
 
   .preset-1 {
-    font-family: var(--body-font);
+    font-family: var(--title-font);
     font-size: 3rem;
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--weight-semi-bold);
     line-height: 100%;
     letter-spacing: 0rem;
   }
@@ -52,20 +43,20 @@
   .preset-2 {
     font-family: var(--body-font);
     font-size: 1.125rem;
-    font-weight: var(--font-regular);
+    font-weight: var(--weight-regular);
   }
 
   .preset-3 {
     font-family: var(--body-font);
     font-size: 2rem;
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--weight-semi-bold);
     line-height: 120%;
   }
 
   .preset-4 {
     font-family: var(--body-font);
     font-size: 1.125rem;
-    font-weight: var(--font-regular);
+    font-weight: var(--weight-regular);
   }
 
   .preset-5 {
@@ -96,6 +87,17 @@
 }
 
 /*=============== BASE ===============*/
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/manrope/static/manrope-regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf")
+    format("truetype");
+}
 
 * {
   box-sizing: border-box;
@@ -159,7 +161,7 @@ button {
 }
 
 body {
-  font-family: "Fraunces", sans-serif;
+  //font-family: "Fraunces", sans-serif;
   color: var(--purple-color-500);
 }
 
@@ -172,7 +174,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-200) 0;
+  padding: var(--space-400) var(--space-250) 0 var(--space-250);
 }
 
 .nav__logo {
@@ -194,7 +196,7 @@ body {
   flex-direction: column;
   background: var(--purple-color-900);
 
-  padding: 8rem 0 4rem 0;
+  padding: var(--space-700) var(--space-250) var(--space-1800) var(--space-250);
 }
 
 .hero__title {
