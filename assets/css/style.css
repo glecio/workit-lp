@@ -7,9 +7,14 @@
   --purple-color-900: hsl(273, 85%, 13%);
   --purple-color-500: hsl(271, 12%, 34%);
   --purple-color-100: hsl(276, 100%, 99%);
+  --slate-color-900: hsl(273, 85%, 13%);
+  --slate-color-500: hsl(271, 12%, 34%);
+  --slate-color-100: hsl(310, 100%, 99%);
+
   --white-color: #fff;
 
   /*========== TYPOGHAPHY ==========*/
+
   /*========== Font weight ==========*/
   /*
     400 – Regular. 
@@ -51,12 +56,14 @@
     font-size: 2rem;
     font-weight: var(--weight-semi-bold);
     line-height: 120%;
+    color: var(--purple-color-900);
   }
 
   .preset-4 {
     font-family: var(--body-font);
     font-size: 1.125rem;
     font-weight: var(--weight-regular);
+    color: var(--purple-color-900);
   }
 
   .preset-5 {
@@ -118,6 +125,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--white-color);
 }
 
 img,
@@ -161,7 +169,12 @@ button {
 }
 
 body {
-  color: var(--purple-color-500);
+  color: var(--white-color);
+  background: var(--purple-color-100);
+}
+
+.featured {
+  border-bottom: 3px solid var(--green-color);
 }
 
 /*=============== NAV ===============*/
@@ -228,10 +241,32 @@ body {
   height: 5rem;
 }
 /*=============== FEATURES SECTION ===============*/
+.feature__circle {
+  border: 2px solid var(--slate-color-500);
+  border-color: var(--purple-color-500);
+  border-radius: 50%;
+}
+
+.feature__number {
+  font-family: var(--title-font);
+  font-size: 1.25rem;
+  font-weight: var(--weight-semi-bold);
+  line-height: 40%;
+  letter-spacing: 0rem;
+  color: var(--purple-color-900);
+  padding: var(--space-);
+}
+
 .features__container {
   display: flex;
   gap: var(--space-200);
   flex-direction: column;
 }
 
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /*=============== FOOTER SECTION ===============*/
