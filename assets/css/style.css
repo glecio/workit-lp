@@ -161,7 +161,6 @@ button {
 }
 
 body {
-  //font-family: "Fraunces", sans-serif;
   color: var(--purple-color-500);
 }
 
@@ -181,6 +180,11 @@ body {
   color: var(--white-color);
   font-size: 1.5rem;
   font-weight: var(--weight-bold);
+}
+
+.active-link {
+  border-bottom: 3px solid var(--green-color);
+  padding-bottom: var(--space-100);
 }
 
 /*=============== HERO SECTION ===============*/
