@@ -266,7 +266,7 @@ body {
   display: flex;
   gap: var(--space-200);
   flex-direction: column;
-  padding: var(--space-400) var(--space-250);
+  padding: var(--space-800) var(--space-250);
 }
 
 .feature {
@@ -274,6 +274,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
+}
+
+.feature__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-200, 1rem);
 }
 /*=============== FOOTER SECTION ===============*/
 
