@@ -25,9 +25,8 @@
   --weight-semi-bold: 600;
   --weight-bold: 700;
 
-  --body-font: "Fraunces";
   --title-font: "Fraunces";
-  --button-font: "Manrope";
+  --body-font: "Manrope";
 
   /*========== Font size ==========*/
   .title {
@@ -46,13 +45,13 @@
   }
 
   .preset-2 {
-    font-family: var(--body-font);
+    font-family: var(--title-font);
     font-size: 1.125rem;
     font-weight: var(--weight-regular);
   }
 
   .preset-3 {
-    font-family: var(--body-font);
+    font-family: var(--title-font);
     font-size: 2rem;
     font-weight: var(--weight-semi-bold);
     line-height: 120%;
@@ -64,10 +63,11 @@
     font-size: 1.125rem;
     font-weight: var(--weight-regular);
     color: var(--purple-color-900);
+    line-height: 180%;
   }
 
   .preset-5 {
-    font-family: var(--button-font);
+    font-family: var(--body-font);
     font-size: 1.125rem;
     font-weight: var(--weight-bold);
     line-height: 180%;
@@ -275,6 +275,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  text-align: center;
 }
 
 .feature__content {
