@@ -255,12 +255,18 @@ body {
   letter-spacing: 0rem;
   color: var(--purple-color-900);
   padding: var(--space-);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .features__container {
   display: flex;
   gap: var(--space-200);
   flex-direction: column;
+  padding: var(--space-400) var(--space-250);
 }
 
 .feature {
@@ -270,3 +276,5 @@ body {
   align-items: center;
 }
 /*=============== FOOTER SECTION ===============*/
+
+/*=============== MEDIA QUERIES ===============*/
