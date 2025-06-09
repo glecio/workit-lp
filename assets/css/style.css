@@ -292,6 +292,34 @@ body {
   justify-content: center;
   gap: var(--space-200, 1rem);
 }
+/*=============== CTA SECTION ===============*/
+.cta {
+}
+
+.cta__container {
+  display: flex;
+  padding: var(--spacing-1400, 112px) var(--spacing-250, 20px) 0px
+    var(--spacing-250, 20px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  align-self: stretch;
+}
+
+.cta__content {
+  background: var(--purple-color-900);
+  padding: var(--space-400);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-400);
+}
+
+.cta__title {
+}
+
 /*=============== FOOTER SECTION ===============*/
 
 /*=============== MEDIA QUERIES ===============*/
