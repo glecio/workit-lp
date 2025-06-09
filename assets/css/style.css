@@ -244,6 +244,10 @@ body {
   height: 5rem;
 }
 /*=============== FEATURES SECTION ===============*/
+.fesatures {
+  background: var(--purple-color-100);
+}
+
 .feature__circle {
   border: 2px solid var(--slate-color-500);
   border-color: var(--purple-color-500);
